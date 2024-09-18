@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header class="header"></header>
+        <div class="logo">
+            <img src="Recursos/" alt="Logo de la pagina">
+        </div>
+
+        <nav>
+            <ol class="nav-list">
+
+                <li><a href="index.html">Inicio</a></li>
+
+            </ol>
+        </nav>
+        <div class="seccion">
+
+            <a href="" class="btn"> <button>Iniciar Seccion</button></a>
+            <a href="" class="btn"> <button>Registrarse</button></a>
+        </div>
+    </header>
+    <main class="consultas-main">
+    <h1 class="h1-consulta">Consultas </h1>
+    <div class="Consultas">
+
+        <h1>1. Encontrar todos los productos con ID 1</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ ID: { $eq: 1 } })</p>
+      
+><p>Descripcion; Como administrador, quiero recuperar un producto específico por su ID.</p>
+      
+        <table >
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            
+      
+            <tr>
+      
+              <td>1</td>
+      
+              <td>Café con Leche</td>
+      
+              <td>Café con leche y azúcar</td>
+      
+              <td>5000</td>
+      
+              <td>Bebida</td>
+      
+              <td>30</td>
+      
+              <td>Cafetería El Café</td>
+      
+              <td>05/09/2024</td>
+      
+              <td>10/09/2024</td>
+      
+              <td>200</td>
+      
+            </tr>
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+    <div class="Consultas">
+
+        <h1>2. Encontrar todos los productos con un precio mayor que 10000 </h1>
+
+        <p> <b>Codigo: </b> db.cafeteria.find({ Precio: { $gt: 10000 } })</p>
+
+    <p>Descripcion; Como usuario, quiero ver los productos más caros de la cafetería</p>
+
+
+  
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>PRODUCTO</th>
+
+                    <th>DESCRIPCION</th>
+
+                    <th>PRECIO </th>
+
+                    <th>CATEGORIA</th>
+
+                    <th>CANTIDAD</th>
+
+                    <th>PROVEEDORES</th>
+
+                    <th>FECHA DE ADQUISICION</th>
+
+                    <th>FECHA DE VENCIMIENTO</th>
+
+                    <th>CALORIAS (Kcal)</th>
+
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>5</td>
+
+                    <td>Sándwich de Pavo</td>
+
+                    <td>Sándwich con pavo y vegetales</td>
+
+                    <td>18900</td>
+
+                    <td>Comida</td>
+
+                    <td>40</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>13/09/2024</td>
+
+                    <td>400</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>7</td>
+
+                    <td>Ensalada César</td>
+
+                    <td>Ensalada con pollo y aderezo</td>
+
+                    <td>21000</td>
+
+                    <td>Comida</td>
+
+                    <td>30</td>
+
+                    <td>Green Harvest</td>
+
+                    <td>02/09/2024</td>
+
+                    <td>08/09/2024</td>
+
+                    <td>320</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>12</td>
+
+                    <td>Wrap de Pollo</td>
+
+                    <td>Wrap de pollo con vegetales</td>
+
+                    <td>23100</td>
+
+                    <td>Comida</td>
+
+                    <td>35</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>12/09/2024</td>
+
+                    <td>450</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>27</td>
+
+                    <td>Panini de Pollo</td>
+
+                    <td>Panini caliente con pollo y queso</td>
+
+                    <td>16800</td>
+
+                    <td>Comida</td>
+
+                    <td>35</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>09/09/2024</td>
+
+                    <td>500</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>33</td>
+
+                    <td>Wrap Vegetariano</td>
+
+                    <td>Wrap con vegetales frescos</td>
+
+                    <td>18900</td>
+
+                    <td>Comida</td>
+
+                    <td>40</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>12/09/2024</td>
+
+                    <td>350</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>37</td>
+
+                    <td>Sándwich Vegetariano</td>
+
+                    <td>Sándwich con vegetales y queso</td>
+
+                    <td>16800</td>
+
+                    <td>Comida</td>
+
+                    <td>35</td>
+
+                    <td>Green Harvest</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>08/09/2024</td>
+
+                    <td>300</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>38</td>
+
+                    <td>Ensalada de Quinoa</td>
+
+                    <td>Ensalada saludable con quinoa</td>
+
+                    <td>18900</td>
+
+                    <td>Comida</td>
+
+                    <td>25</td>
+
+                    <td>Green Harvest</td>
+
+                    <td>02/09/2024</td>
+
+                    <td>08/09/2024</td>
+
+                    <td>280</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>41</td>
+
+                    <td>Wrap de Atún</td>
+
+                    <td>Wrap de atún con mayonesa</td>
+
+                    <td>18900</td>
+
+                    <td>Comida</td>
+
+                    <td>40</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>12/09/2024</td>
+
+                    <td>380</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>44</td>
+
+                    <td>Ensalada de Espinaca</td>
+
+                    <td>Ensalada con espinaca y frutas</td>
+
+                    <td>21000</td>
+
+                    <td>Comida</td>
+
+                    <td>30</td>
+
+                    <td>Green Harvest</td>
+
+                    <td>02/09/2024</td>
+
+                    <td>08/09/2024</td>
+
+                    <td>300</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="Consultas">
+        <h1>3. Encontrar todos los productos con un precio mayor o igual que 10000 </h1>
+        <p> <b>Codigo: </b> db.cafeteria.find({ Precio: { $gte: 10000 } })</p><p>Descripcion; Como
+            administrador, quiero ver los productos que cuestan al menos 10000</p>
+
+       
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>PRODUCTO</th>
+
+                    <th>DESCRIPCION</th>
+
+                    <th>PRECIO </th>
+
+                    <th>CATEGORIA</th>
+
+                    <th>CANTIDAD</th>
+
+                    <th>PROVEEDORES</th>
+
+                    <th>FECHA DE ADQUISICION</th>
+
+                    <th>FECHA DE VENCIMIENTO</th>
+
+                    <th>CALORIAS (Kcal)</th>
+
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>5</td>
+
+                    <td>Sándwich de Pavo</td>
+
+                    <td>Sándwich con pavo y vegetales</td>
+
+                    <td>18900</td>
+
+                    <td>Comida</td>
+
+                    <td>40</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>13/09/2024</td>
+
+                    <td>400</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>7</td>
+
+                    <td>Ensalada César</td>
+
+                    <td>Ensalada con pollo y aderezo</td>
+
+                    <td>21000</td>
+
+                    <td>Comida</td>
+
+                    <td>30</td>
+
+                    <td>Green Harvest</td>
+
+                    <td>02/09/2024</td>
+
+                    <td>08/09/2024</td>
+
+                    <td>320</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>12</td>
+
+                    <td>Wrap de Pollo</td>
+
+                    <td>Wrap de pollo con vegetales</td>
+
+                    <td>23100</td>
+
+                    <td>Comida</td>
+
+                    <td>35</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>12/09/2024</td>
+
+                    <td>450</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>27</td>
+
+                    <td>Panini de Pollo</td>
+
+                    <td>Panini caliente con pollo y queso</td>
+
+                    <td>16800</td>
+
+                    <td>Comida</td>
+
+                    <td>35</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>09/09/2024</td>
+
+                    <td>500</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>33</td>
+
+                    <td>Wrap Vegetariano</td>
+
+                    <td>Wrap con vegetales frescos</td>
+
+                    <td>18900</td>
+
+                    <td>Comida</td>
+
+                    <td>40</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>12/09/2024</td>
+
+                    <td>350</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>37</td>
+
+                    <td>Sándwich Vegetariano</td>
+
+                    <td>Sándwich con vegetales y queso</td>
+
+                    <td>16800</td>
+
+                    <td>Comida</td>
+
+                    <td>35</td>
+
+                    <td>Green Harvest</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>08/09/2024</td>
+
+                    <td>300</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>38</td>
+
+                    <td>Ensalada de Quinoa</td>
+
+                    <td>Ensalada saludable con quinoa</td>
+
+                    <td>18900</td>
+
+                    <td>Comida</td>
+
+                    <td>25</td>
+
+                    <td>Green Harvest</td>
+
+                    <td>02/09/2024</td>
+
+                    <td>08/09/2024</td>
+
+                    <td>280</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>41</td>
+
+                    <td>Wrap de Atún</td>
+
+                    <td>Wrap de atún con mayonesa</td>
+
+                    <td>18900</td>
+
+                    <td>Comida</td>
+
+                    <td>40</td>
+
+                    <td>Fresh & Deli</td>
+
+                    <td>03/09/2024</td>
+
+                    <td>12/09/2024</td>
+
+                    <td>380</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>44</td>
+
+                    <td>Ensalada de Espinaca</td>
+
+                    <td>Ensalada con espinaca y frutas</td>
+
+                    <td>21000</td>
+
+                    <td>Comida</td>
+
+                    <td>30</td>
+
+                    <td>Green Harvest</td>
+
+                    <td>02/09/2024</td>
+
+                    <td>08/09/2024</td>
+
+                    <td>300</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="Consultas">
+
+
+        <h1>4. Encontrar todos los productos con un precio menor que 5000</h1>
+
+
+        <p><b>Codigo:</b> db.cafeteria.find({ Precio: { $lt: 5000 } })</p>
+
+
+    <p>Descripcion; Como usuario, quiero ver los productos más baratos de la cafetería</p>
+
+
+        <table>
+
+
+            <thead>
+
+
+                <tr>
+
+
+                    <th>ID</th>
+
+
+                    <th>PRODUCTO</th>
+
+
+                    <th>DESCRIPCION</th>
+
+
+                    <th>PRECIO </th>
+
+
+                    <th>CATEGORIA</th>
+
+
+                    <th>CANTIDAD</th>
+
+
+                    <th>PROVEEDORES</th>
+
+
+                    <th>FECHA DE ADQUISICION</th>
+
+
+                    <th>FECHA DE VENCIMIENTO</th>
+
+
+                    <th>CALORIAS (Kcal)</th>
+
+
+                </tr>
+
+
+            </thead>
+
+
+            <tbody>
+
+
+                <tr>
+
+
+                    <td>25</td>
+
+
+                    <td>Refresco de Cola</td>
+
+
+                    <td>Bebida gaseosa de cola</td>
+
+
+                    <td>4200</td>
+
+
+                    <td>Bebida</td>
+
+
+                    <td>150</td>
+
+
+                    <td>Refrescos S.A.</td>
+
+
+                    <td>30/08/2024</td>
+
+
+                    <td>15/11/2024</td>
+
+
+                    <td>140</td>
+
+
+                </tr>
+
+
+                <tr>
+
+
+                    <td>26</td>
+
+
+                    <td>Té Negro</td>
+
+
+                    <td>Té negro clásico</td>
+
+
+                    <td>5040</td>
+
+
+                    <td>Bebida</td>
+
+
+                    <td>100</td>
+
+
+                    <td>Tés del Mundo</td>
+
+
+                    <td>28/08/2024</td>
+
+
+                    <td>01/12/2024</td>
+
+
+                    <td>0</td>
+
+
+                </tr>
+
+
+                <tr>
+
+
+                    <td>42</td>
+
+
+                    <td>Té de Jazmín</td>
+
+
+                    <td>Infusión de jazmín</td>
+
+
+                    <td>7560</td>
+
+
+                    <td>Bebida</td>
+
+
+                    <td>100</td>
+
+
+                    <td>Tés del Mundo</td>
+
+
+                    <td>28/08/2024</td>
+
+
+                    <td>01/12/2024</td>
+
+
+                    <td>0</td>
+
+
+                </tr>
+
+
+                <tr>
+
+
+                    <td>50</td>
+
+
+                    <td>Pan de Ajo</td>
+
+
+                    <td>Pan con mantequilla y ajo</td>
+
+
+                    <td>8820</td>
+
+
+                    <td>Snack</td>
+
+
+                    <td>80</td>
+
+
+                    <td>Panadería Local</td>
+
+
+                    <td>01/09/2024</td>
+
+
+                    <td>05/09/2024</td>
+
+
+                    <td>200</td>
+
+
+                </tr>
+
+
+            </tbody>
+
+
+        </table>
+
+
+    </div>
+
+    <div class="Consultas">
+
+        <h1>5. Encontrar todos los productos con un precio menor o igual que 5000</h1>
+
+        <p><b>Codigo:</b> db.cafeteria.find({ Precio: { $lte: 5000 } })</p>
+
+    <p>Descripcion; Como administrador, quiero ver los productos que cuestan como máximo 5000</p>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>PRODUCTO</th>
+
+                    <th>DESCRIPCION</th>
+
+                    <th>PRECIO </th>
+
+                    <th>CATEGORIA</th>
+
+                    <th>CANTIDAD</th>
+
+                    <th>PROVEEDORES</th>
+
+                    <th>FECHA DE ADQUISICION</th>
+
+                    <th>FECHA DE VENCIMIENTO</th>
+
+                    <th>CALORIAS (Kcal)</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>25</td>
+
+                    <td>Refresco de Cola</td>
+
+                    <td>Bebida gaseosa de cola</td>
+
+                    <td>4200</td>
+
+                    <td>Bebida</td>
+
+                    <td>150</td>
+
+                    <td>Refrescos S.A.</td>
+
+                    <td>30/08/2024</td>
+
+                    <td>15/11/2024</td>
+
+                    <td>140</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>26</td>
+
+                    <td>Té Negro</td>
+
+                    <td>Té negro clásico</td>
+
+                    <td>5040</td>
+
+                    <td>Bebida</td>
+
+                    <td>100</td>
+
+                    <td>Tés del Mundo</td>
+
+                    <td>28/08/2024</td>
+
+                    <td>01/12/2024</td>
+
+                    <td>0</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>42</td>
+
+                    <td>Té de Jazmín</td>
+
+                    <td>Infusión de jazmín</td>
+
+                    <td>7560</td>
+
+                    <td>Bebida</td>
+
+                    <td>100</td>
+
+                    <td>Tés del Mundo</td>
+
+                    <td>28/08/2024</td>
+
+                    <td>01/12/2024</td>
+
+                    <td>0</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>50</td>
+
+                    <td>Pan de Ajo</td>
+
+                    <td>Pan con mantequilla y ajo</td>
+
+                    <td>8820</td>
+
+                    <td>Snack</td>
+
+                    <td>80</td>
+
+                    <td>Panadería Local</td>
+
+                    <td>01/09/2024</td>
+
+                    <td>05/09/2024</td>
+
+                    <td>200</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>49</td>
+
+                    <td>Empanada de Carne</td>
+
+                    <td>Empanada rellena de carne</td>
+
+                    <td>10500</td>
+
+                    <td>Snack</td>
+
+                    <td>100</td>
+
+                    <td>Panadería Local</td>
+
+                    <td>01/09/2024</td>
+
+                    <td>06/09/2024</td>
+
+                    <td>380</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>24</td>
+
+                    <td>Croissant de Jamón y Queso</td>
+
+                    <td>Croissant relleno de jamón y queso</td>
+
+                    <td>10500</td>
+
+                    <td>Snack</td>
+
+                    <td>50</td>
+
+                    <td>Panadería Local</td>
+
+                    <td>01/09/2024</td>
+
+                    <td>07/09/2024</td>
+
+                    <td>370</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="Consultas">
+
+        <h1>6. Encontrar todos los productos que no tienen un ID igual a 1</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ ID: { $ne: 1 } })</p>
+      
+    <p>Descripcion; Como administrador, quiero ver todos los productos excepto el que tiene ID 1</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            <tr>
+      
+              <td>25</td>
+      
+              <td>Refresco de Cola</td>
+      
+              <td>Bebida gaseosa de cola</td>
+      
+              <td>4200</td>
+      
+              <td>Bebida</td>
+      
+              <td>150</td>
+      
+              <td>Refrescos S.A.</td>
+      
+              <td>30/08/2024</td>
+      
+              <td>15/11/2024</td>
+      
+              <td>140</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>26</td>
+      
+              <td>Té Negro</td>
+      
+              <td>Té negro clásico</td>
+      
+              <td>5040</td>
+      
+              <td>Bebida</td>
+      
+              <td>100</td>
+      
+              <td>Tés del Mundo</td>
+      
+              <td>28/08/2024</td>
+      
+              <td>01/12/2024</td>
+      
+              <td>0</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>42</td>
+      
+              <td>Té de Jazmín</td>
+      
+              <td>Infusión de jazmín</td>
+      
+              <td>7560</td>
+      
+              <td>Bebida</td>
+      
+              <td>100</td>
+      
+              <td>Tés del Mundo</td>
+      
+              <td>28/08/2024</td>
+      
+              <td>01/12/2024</td>
+      
+              <td>0</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>50</td>
+      
+              <td>Pan de Ajo</td>
+      
+              <td>Pan con mantequilla y ajo</td>
+      
+              <td>8820</td>
+      
+              <td>Snack</td>
+      
+              <td>80</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>05/09/2024</td>
+      
+              <td>200</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>49</td>
+      
+              <td>Empanada de Carne</td>
+      
+              <td>Empanada rellena de carne</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>100</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>06/09/2024</td>
+      
+              <td>380</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>24</td>
+      
+              <td>Croissant de Jamón y Queso</td>
+      
+              <td>Croissant relleno de jamón y queso</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>50</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>07/09/2024</td>
+      
+              <td>370</td>
+      
+            </tr>
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>7. Encontrar todos los productos que no tienen un precio igual a 10000</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Precio: { $ne: 10000 } })</p>
+      
+    <p>Descripcion; Como usuario, quiero ver todos los productos que no cuestan 10000</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            <tr>
+      
+              <td>25</td>
+      
+              <td>Refresco de Cola</td>
+      
+              <td>Bebida gaseosa de cola</td>
+      
+              <td>4200</td>
+      
+              <td>Bebida</td>
+      
+              <td>150</td>
+      
+              <td>Refrescos S.A.</td>
+      
+              <td>30/08/2024</td>
+      
+              <td>15/11/2024</td>
+      
+              <td>140</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>26</td>
+      
+              <td>Té Negro</td>
+      
+              <td>Té negro clásico</td>
+      
+              <td>5040</td>
+      
+              <td>Bebida</td>
+      
+              <td>100</td>
+      
+              <td>Tés del Mundo</td>
+      
+              <td>28/08/2024</td>
+      
+              <td>01/12/2024</td>
+      
+              <td>0</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>42</td>
+      
+              <td>Té de Jazmín</td>
+      
+              <td>Infusión de jazmín</td>
+      
+              <td>7560</td>
+      
+              <td>Bebida</td>
+      
+              <td>100</td>
+      
+              <td>Tés del Mundo</td>
+      
+              <td>28/08/2024</td>
+      
+              <td>01/12/2024</td>
+      
+              <td>0</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>50</td>
+      
+              <td>Pan de Ajo</td>
+      
+              <td>Pan con mantequilla y ajo</td>
+      
+              <td>8820</td>
+      
+              <td>Snack</td>
+      
+              <td>80</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>05/09/2024</td>
+      
+              <td>200</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>49</td>
+      
+              <td>Empanada de Carne</td>
+      
+              <td>Empanada rellena de carne</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>100</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>06/09/2024</td>
+      
+              <td>380</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>24</td>
+      
+              <td>Croissant de Jamón y Queso</td>
+      
+              <td>Croissant relleno de jamón y queso</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>50</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>07/09/2024</td>
+      
+              <td>370</td>
+      
+            </tr>
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>8. Encontrar todos los productos que tienen un proveedor que no es "Café Universitario"</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Proveedores: { $nin: ["Café Universitario"] } })</p>
+      
+    <p>Descripcion; Como administrador, quiero ver los productos que no son proporcionados por "Café Universitario"</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            <tr>
+      
+              <td>25</td>
+      
+              <td>Refresco de Cola</td>
+      
+              <td>Bebida gaseosa de cola</td>
+      
+              <td>4200</td>
+      
+              <td>Bebida</td>
+      
+              <td>150</td>
+      
+              <td>Refrescos S.A.</td>
+      
+              <td>30/08/2024</td>
+      
+              <td>15/11/2024</td>
+      
+              <td>140</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>26</td>
+      
+              <td>Té Negro</td>
+      
+              <td>Té negro clásico</td>
+      
+              <td>5040</td>
+      
+              <td>Bebida</td>
+      
+              <td>100</td>
+      
+              <td>Tés del Mundo</td>
+      
+              <td>28/08/2024</td>
+      
+              <td>01/12/2024</td>
+      
+              <td>0</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>42</td>
+      
+              <td>Té de Jazmín</td>
+      
+              <td>Infusión de jazmín</td>
+      
+              <td>7560</td>
+      
+              <td>Bebida</td>
+      
+              <td>100</td>
+      
+              <td>Tés del Mundo</td>
+      
+              <td>28/08/2024</td>
+      
+              <td>01/12/2024</td>
+      
+              <td>0</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>50</td>
+      
+              <td>Pan de Ajo</td>
+      
+              <td>Pan con mantequilla y ajo</td>
+      
+              <td>8820</td>
+      
+              <td>Snack</td>
+      
+              <td>80</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>05/09/2024</td>
+      
+              <td>200</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>49</td>
+      
+              <td>Empanada de Carne</td>
+      
+              <td>Empanada rellena de carne</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>100</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>06/09/2024</td>
+      
+              <td>380</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>24</td>
+      
+              <td>Croissant de Jamón y Queso</td>
+      
+              <td>Croissant relleno de jamón y queso</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>50</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>07/09/2024</td>
+      
+              <td>370</td>
+      
+            </tr>
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>9. Encontrar todos los productos que tienen un proveedor que es "Café Universitario" o "Panadería Local"</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Proveedores: { $in: ["Café Universitario", "Panadería Local"] } })</p>
+      
+    <p>Descripcion; Como usuario, quiero ver los productos que son proporcionados por "Café Universitario" o "Panadería Local"</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            <tr>
+      
+              <td>49</td>
+      
+              <td>Empanada de Carne</td>
+      
+              <td>Empanada rellena de carne</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>100</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>06/09/2024</td>
+      
+              <td>380</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>24</td>
+      
+              <td>Croissant de Jamón y Queso</td>
+      
+              <td>Croissant relleno de jamón y queso</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>50</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>07/09/2024</td>
+      
+              <td>370</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>50</td>
+      
+              <td>Pan de Ajo</td>
+      
+              <td>Pan con mantequilla y ajo</td>
+      
+              <td>8820</td>
+      
+              <td>Snack</td>
+      
+              <td>80</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>05/09/2024</td>
+      
+              <td>200</td>
+      
+            </tr>
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>10. Encontrar todos los productos que tienen un nombre que contiene la palabra "Café"</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Nombre: /Café/ })</p>
+      
+    <p>Descripcion; Como usuario, quiero ver todos los productos que tienen "Café" en su nombre.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>11. Encontrar todos los productos que tienen un precio mayor que 5000 y menor que 10000</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Precio: { $gt: 5000, $lt: 10000 } })</p>
+      
+    <p>Descripcion; Como administrador, quiero ver los productos que cuestan entre 5000 y 10000.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            <tr>
+      
+              <td>49</td>
+      
+              <td>Empanada de Carne</td>
+      
+              <td>Empanada rellena de carne</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>100</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>06/09/2024</td>
+      
+              <td>380</td>
+      
+            </tr>
+      
+            <tr>
+      
+              <td>24</td>
+      
+              <td>Croissant de Jamón y Queso</td>
+      
+              <td>Croissant relleno de jamón y queso</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>50</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>07/09/2024</td>
+      
+              <td>370</td>
+      
+            </tr>
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>12. Encontrar todos los productos que tienen un proveedor que es "Fresh & Deli" y un precio mayor que 15000</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Proveedores: "Fresh & Deli", Precio: { $gt: 15000 } })</p>
+      
+    <p>Descripcion; Como usuario, quiero ver los productos de "Fresh & Deli" que cuestan más de 15000.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+           
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+
+      <div class="Consultas">
+
+        <h1>13. Encontrar todos los productos que tienen un nombre que contiene la palabra "Croissant"</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Nombre: /Croissant/ })</p>
+      
+    <p>Descripcion; Como usuario, quiero ver todos los productos que tienen "Croissant" en su nombre.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            <tr>
+      
+              <td>24</td>
+      
+              <td>Croissant de Jamón y Queso</td>
+      
+              <td>Croissant relleno de jamón y queso</td>
+      
+              <td>10500</td>
+      
+              <td>Snack</td>
+      
+              <td>50</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>01/09/2024</td>
+      
+              <td>07/09/2024</td>
+      
+              <td>370</td>
+      
+            </tr>
+      
+            
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>14. Encontrar todos los productos que tienen un proveedor que no es "Tés del Mundo" y un precio menor que 8000</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Proveedores: { $ne: "Tés del Mundo" }, Precio: { $lt: 8000 } })</p>
+      
+    <p>Descripcion; Como administrador, quiero ver los productos que no son proporcionados por "Tés del Mundo" y cuestan menos de 8000.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+           
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>15. Encontrar todos los productos que tienen un nombre que contiene la palabra "Wrap"</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Nombre: /Wrap/ })</p>
+      
+    <p>Descripcion; Como usuario, quiero ver todos los productos que tienen "Wrap" en su nombre.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+            <tr>
+      
+              <td>17</td>
+      
+              <td>Wrap de Pollo</td>
+      
+              <td>Wrap de pollo con lechuga y tomate</td>
+      
+              <td>6500</td>
+      
+              <td>Snack</td>
+      
+              <td>30</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>02/09/2024</td>
+      
+              <td>08/09/2024</td>
+      
+              <td>420</td>
+      
+            </tr>
+      
+            
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>16. Encontrar todos los productos que tienen un proveedor que es "Green Harvest" y un precio mayor que 12000</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Proveedores: "Green Harvest", Precio: { $gt: 12000 } })</p>
+      
+    <p>Descripcion; Como administrador, quiero ver los productos de "Green Harvest" que cuestan más de 12000.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+          
+      
+            <tr>
+      
+              <td>25</td>
+      
+              <td>Ensalada de Quinoa</td>
+      
+              <td>Ensalada de quinoa con verduras frescas y aderezo de limón</td>
+      
+              <td>15000</td>
+      
+              <td>Ensalada</td>
+      
+              <td>20</td>
+      
+              <td>Green Harvest</td>
+      
+              <td>10/08/2024</td>
+      
+              <td>17/08/2024</td>
+      
+              <td>550</td>
+      
+            </tr>
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>17. Encontrar todos los productos que tienen un nombre que contiene la palabra "Sándwich"</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Nombre: /Sándwich/ })</p>
+      
+    <p>Descripcion; Como usuario, quiero ver todos los productos que tienen "Sándwich" en su nombre.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+      
+            <tr>
+      
+              <td>10</td>
+      
+              <td>Sándwich de Atun</td>
+      
+              <td>Sándwich de atun con lechuga y tomate</td>
+      
+              <td>8000</td>
+      
+              <td>Snack</td>
+      
+              <td>25</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>05/09/2024</td>
+      
+              <td>11/09/2024</td>
+      
+              <td>500</td>
+      
+            </tr>
+      
+          
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>18. Encontrar todos los productos que tienen un proveedor que no es "Frutas del Sol" y un precio menor que 6000</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Proveedores: { $ne: "Frutas del Sol" }, Precio: { $lt: 6000 } })</p>
+      
+    <p>Descripcion; Como administrador, quiero ver los productos que no son proporcionados por "Frutas del Sol" y cuestan menos de 6000.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+
+      
+            <tr>
+      
+              <td>5</td>
+      
+              <td>Jugo de Naranja</td>
+      
+              <td>Jugo de naranja natural</td>
+      
+              <td>4500</td>
+      
+              <td>Bebida</td>
+      
+              <td>30</td>
+      
+              <td>Green Harvest</td>
+      
+              <td>01/08/2024</td>
+      
+              <td>08/08/2024</td>
+      
+              <td>200</td>
+      
+            </tr>
+      
+       
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>19. Encontrar todos los productos que tienen un nombre que contiene la palabra "Torta"</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Nombre: /Torta/ })</p>
+      
+    <p>Descripcion; Como usuario, quiero ver todos los productos que tienen "Torta" en su nombre.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+           
+      
+            <tr>
+      
+              <td>12</td>
+      
+              <td>Torta de Chocolate</td>
+      
+              <td>Torta de chocolate con nueces y crema</td>
+      
+              <td>9000</td>
+      
+              <td>Postre</td>
+      
+              <td>20</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>10/09/2024</td>
+      
+              <td>15/09/2024</td>
+      
+              <td>700</td>
+      
+            </tr>
+      
+           
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+
+      <div class="Consultas">
+
+        <h1>20. Encontrar todos los productos que tienen un proveedor que es "Panadería Local" y un precio mayor que 9000</h1>
+      
+        <p><b>Codigo:</b> db.cafeteria.find({ Proveedores: "Panadería Local", Precio: { $gt: 9000 } })</p>
+      
+    <p>Descripcion; Como administrador, quiero ver los productos de "Panadería Local" que cuestan más de 9000.</p>
+      
+        <table>
+      
+          <thead>
+      
+            <tr>
+      
+              <th>ID</th>
+      
+              <th>PRODUCTO</th>
+      
+              <th>DESCRIPCION</th>
+      
+              <th>PRECIO </th>
+      
+              <th>CATEGORIA</th>
+      
+              <th>CANTIDAD</th>
+      
+              <th>PROVEEDORES</th>
+      
+              <th>FECHA DE ADQUISICION</th>
+      
+              <th>FECHA DE VENCIMIENTO</th>
+      
+              <th>CALORIAS (Kcal)</th>
+      
+            </tr>
+      
+          </thead>
+      
+          <tbody>
+      
+      
+            <tr>
+      
+              <td>15</td>
+      
+              <td>Torta de Tres Leches</td>
+      
+              <td>Torta de tres leches con frutas y crema</td>
+      
+              <td>12000</td>
+      
+              <td>Postre</td>
+      
+              <td>15</td>
+      
+              <td>Panadería Local</td>
+      
+              <td>12/10/2024</td>
+      
+              <td>17/10/2024</td>
+      
+              <td>800</td>
+      
+            </tr>
+      
+          </tbody>
+      
+        </table>
+      
+      </div>
+    </main>
+
+</body>
+
+</html>

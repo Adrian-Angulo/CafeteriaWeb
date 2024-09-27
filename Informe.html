@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilos/informe.css">
+    <title>Informe</title>
+
+
+</head>
+
+<body>
+    <!-- Header de la pagina -->
+    <header class="header">
+        <div class="logo">
+            <img src="Recursos/logo.jpg" alt="Logo de la pagina">
+        </div>
+
+        <nav>
+            <ol class="nav-list">
+
+
+
+                <li><a href="./index.html">home</a></li>
+                
+
+
+            </ol>
+        </nav>
+        <div class="seccion">
+
+            <a href="" class="btn"> <button>Iniciar Seccion</button></a>
+            <a href="" class="btn"> <button>Registrarse</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-titulo">
+            <h1>Informe</h1>
+        </section>
+        <!-- seccion de carros -->
+        <section class="datos-carros">
+
+            <h2>Base de datos Carros</h2>
+            <div class="contenedor-carros">
+
+
+                <div class="algoritmo">
+                    <h3>Imagen de insercion de datos </h3>
+                    <p> <span>Descripcion: </span> En se insertarion los datos en la
+                        base de datos con la instrucion <span>db.carros.insertMany([])</span>
+                    </p>
+                    <div class="contenedor-imagen">
+                        <img src="./Recursos/bdProductos/1.png" alt="">
+
+                    </div>
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>1. $eq: Igual que = (Color) </h3>
+                    <p> <span>Descripcion: </span>
+                        trae todo los carros que sean de color rojo
+                        
+                    </p>
+                    <img src="./Recursos/bdcarros/1.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>2. $gt: Mayor que > (año de fabricación) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Trae todos los carros donde su año de fabricacion es
+                        superior a 2000 
+                        <span>db.carros.find(anioFabricacion: [$gt: 2000])</span>
+                    </p>
+                    <img src="./Recursos/bdcarros/2.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>3. $gte: Mayor e igual que >= (precio)</h3>
+                    <p> <span>Descripcion: </span> Trea todos los automoviles que su precio es Mayor
+                        o igual a 17000  <span>db.carros.find({precio: 17000})</span>
+                    </p>
+                    <img src="./Recursos/bdcarros/3.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>4. lt: Menor que  (capacidad de pasajeros) </h3>
+                    <p> <span>Descripcion: </span> trea todos los automoviles
+                        que tengan menos de 6 pasajeros <span>db.carros.find({capacidadPasajeros: $lt: 6})</span>
+                    </p>
+                    <img src="./Recursos/bdcarros/4.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>5. $Ite: Menor e igual que <= (capacidad de pasajeros) </h3>
+                    <p> <span>Descripcion: </span> Trae todos los automoviles
+                        que su potencia del motor es menor o igual a 155  
+                    </p>
+                    <img src="./Recursos/bdcarros/5.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>6. $ne: Diferente != (marca) </h3>
+                    <p> <span>Descripcion: </span> Trae todos los automoviles
+                        que son diferente a la marca toyota  
+                    </p>
+                    <img src="./Recursos/bdcarros/6.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>7. $in: Valores dentro de un rango </h3>
+                    <p> <span>Descripcion: </span>  Trae todos lo automoviles que 
+                        su consumo de conbustible tenga 7 o 8 galones
+                    </p>
+                    <img src="./Recursos/bdcarros/7.png" alt="">
+                </div>
+                <div class="algoritmo">
+                    <h3>8. $nin: Valores que no estan dentro de un rango (propio) </h3>
+                    <p> <span>Descripcion: </span>  Trae todos lo automoviles que
+                        su consumo de combustible no tenga 7 o 8 galones
+                    </p>
+                    <img src="./Recursos/bdcarros/8.png" alt="">
+                </div>
+
+                <div class="algoritmo">
+                    <h3>9. Borrar un carro utilizando (db.collection.deleteOne()) </h3>
+                    <p> <span>Descripcion: </span>  Borra un automovil con un id especifico
+                    </p>
+                    <img src="./Recursos/bdcarros/9.png" alt="">
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- seccion de Hoteles -->
+        <section class="datos-carros">
+
+            <h2>Base de datos Hoteles</h2>
+            <div class="contenedor-carros">
+
+
+                <div class="algoritmo">
+                    <h3>Imagen de insercion de datos </h3>
+                    <p> <span>Descripcion: </span> Insercion de la informacion de los 40 Hoteles
+                        de colombia.
+                    </p>
+                    <div class="contenedor-imagen">
+                        <img src="./Recursos/BDHoteles/Inserccion.png" alt="">
+
+                    </div>
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>1. $eq: Igual que (Nombre del hotel)</h3>
+                    <p> <span>Descripcion: </span>
+                        Se busca informacion  de los hoteles que tengan el nombre de "Hotel plaza"
+
+                    </p>
+                    <img src="./Recursos/bdProductos/1.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>2. 2.	$gt: Mayor que (Clasificación o categoría) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Me  muestra los hoteles que tengan una clasificación mayor a 3 estrellas
+                    </p>
+                    <img src="./Recursos/BDHoteles/2.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>3. $gte: Mayor o igual que (Tarifa promedio por estadía)</h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra los hoteles que tengan una tarifa promedio por estadía mayor o igual a 300
+
+                    </p>
+                    <img src="./Recursos/BDHoteles/3.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>4. $lt: Menor que (Área total de un hotel) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra los hoteles que tengan un área total menor a 4000 m2
+                    </p>
+                    <img src="./Recursos/BDHoteles/4.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>5. $lte: Menor o igual que (Capacidad de personas)</h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra los hoteles que tengan una capacidad de personas por habitacion menor o igual a 3
+                    </p>
+                    <img src="./Recursos/BDHoteles/5.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>6. $ne: Diferente (Ubicación) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra los hoteles que no estén ubicados en la ciudad de Bogota Colombia
+                    </p>
+                    <img src="./Recursos/BDHoteles/6.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>7. $in: Valores dentro de un rango (Ingresos mensuales)</h3>
+                    <p> <span>Descripcion: </span>  
+                        Muestra los hoteles que tengan ingresos mensuales dentro del rango de [25000, 30000, 35000]
+                    </p>
+                    <img src="./Recursos/BDHoteles/7.png" alt="">
+                </div>
+                <div class="algoritmo">
+                    <h3>8. $nin: Valores que no están dentro de un rango (Ingresos mensuales) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra  los hoteles que no tengan ingresos mensuales dentro del rango de [20000, 30000, 40000]
+                    </p>
+                    <img src="./Recursos/BDHoteles/8.png" alt="">
+                </div>
+
+                <div class="algoritmo">
+                    <h3>9. db.collection.find() (Propio) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra todos los hoteles de la base de datos
+                    </p>
+                    <img src="./Recursos/BDHoteles/9.png" alt="">
+                </div>
+                <div class="algoritmo">
+                    <h3>10. Eliminar un hotel con <span>deleteOne</span> </h3>
+                    <p> <span>Descripcion: </span> 
+                        Se elimina un hotel de la base de datos
+                    </p>
+                    <img src="./Recursos/BDHoteles/10.png" alt="">
+                </div>
+            </div>
+            
+        </section>
+        <!-- seccion de Materias -->
+        <section class="datos-carros">
+
+            <h2>Base de datos Hoteles</h2>
+            <div class="contenedor-carros">
+
+
+                <div class="algoritmo">
+                    <h3>Imagen de insercion de datos </h3>
+                    <p> <span>Descripcion: </span> 
+                        Inserccion de datos en la base de datos materias
+                    </p>
+                    <div class="contenedor-imagen">
+                        <img src="./Recursos/Matrias_BD/inserccion.png" alt="">
+
+                    </div>
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>1. $eq: Igual que (nombre)</h3>
+                    <p> <span>Descripcion: </span>
+                        Muestra la materia con el nombre de Programacion Orientada a Objectos
+                    </p>
+                    <img src="./Recursos/Matrias_BD/1.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>2. 2. $gt: Mayor que (creditos) </h3>
+                    <p> <span>Descripcion: </span> 
+                       Muestra  las materias con mas de 3 creditos
+
+                    </p>
+                    <img src="./Recursos/Matrias_BD/2.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>3. $gte: Mayor e igual que (horas)/h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra  las materias con mas o igual a 3 horas
+
+
+                    </p>
+                    <img src="./Recursos/Matrias_BD/3.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>4. $lt: Menor que (horas practicas) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra   las materias con menos de 2 horas practicas
+
+                    </p>
+                    <img src="./Recursos/Matrias_BD/4.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>5. $lte: Menor e igual que (cidgo)</h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra las materias con menores o igual a BD201
+
+                    </p>
+                    <img src="./Recursos/Matrias_BD/5.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>6. $ne: Diferente (profesores)</h3>
+                    <p> <span>Descripcion: </span> 
+                        Materias todos los profesores direfentes a juan perez
+
+                    </p>
+                    <img src="./Recursos/Matrias_BD/6.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>7. $in: Valores dentro de un rango </h3>
+                    <p> <span>Descripcion: </span>  
+                        Muestra las materias que dan es estas aulas : <div A-101,="" B-202,="" C-303=""></div>
+                    <img src="./Recursos/Matrias_BD/7.png" alt="">
+                </div>
+                <div class="algoritmo">
+                    <h3>8. $nin: Valores que no están dentro de un rango </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra materias que no tengan aulas asignadas a D-404 , E-505
+                    </p>
+                    <img src="./Recursos/Matrias_BD/8.png" alt="">
+                </div>
+
+                <div class="algoritmo">
+                    <h3>9. db.collection.find() (Propio) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra todas las materias de la base de datos
+                    </p>
+                    <img src="./Recursos/Matrias_BD/9.png" alt="">
+                </div>
+                <div class="algoritmo">
+                    <h3>10. Eliminar un materia con <span>deleteOne</span> </h3>
+                    <p> <span>Descripcion: </span> 
+                      Se elimina una materia por ejemplo Progamacion Orientada a Objectos
+                    </p>
+                    <img src="./Recursos/Matrias_BD/10.png" alt="">
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- seccion de Platos restaurantes -->
+
+        <section class="datos-carros">
+
+            <h2>Base de datos Platos Restaurantes</h2>
+            <div class="contenedor-carros">
+
+
+                <div class="algoritmo">
+                    <h3>Imagen de insercion de datos </h3>
+                    <p> <span>Descripcion: </span> 
+                        Inserccion de datos en la base de datos del restaurante
+                    </p>
+                    <div class="contenedor-imagen">
+                        <img src="./Recursos/Platos_BD/Inserccion.png" alt="">
+
+                    </div>
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>1. $eq: Igual que (nombre del plato)</h3>
+                    <p> <span>Descripcion: </span>
+                        Muestra el plato con el nombre Ajiaco Santaferño
+                    </p>
+                    <img src="./Recursos/Platos_BD/1.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>2. 2. $gt: Mayor que (categoria) </h3>
+                    <p> <span>Descripcion: </span> 
+                       Muestra los platos con categoria  mayor a 5
+
+
+                    </p>
+                    <img src="./Recursos/Platos_BD/2.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>3. $gte: Mayor e igual que (Tiempo de preparacion)/h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra los platos que tienen un tiempo de preparacion mayor o igual que 30 minutos
+
+
+                    </p>
+                    <img src="./Recursos/Platos_BD/3.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>4. $lt: Menor que (Disponibilidad) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra  los platos con disponibilidad menor a 15
+
+
+                    </p>
+                    <img src="./Recursos/Platos_BD/4.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>5. $lte: Menor e igual que (popularidad)</h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra los platos que tienen una popularidad menor o igual 4.5
+
+                    </p>
+                    <img src="./Recursos/Platos_BD/5.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>6. $ne: Diferente (nivel de picante)</h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra los platos que tienen un nivel de picante diferente a "Ninguno"
+
+                    </p>
+                    <img src="./Recursos/Platos_BD/6.png" alt="">
+                </div>
+                
+                <div class="algoritmo">
+                    <h3>7. $in: Valores dentro de un rango (calorias) </h3>
+                    <p> <span>Descripcion: </span>  
+                        Muestra los platos con calorias  dentro de 150, 200, 300
+
+                    <img src="./Recursos/Platos_BD/7.png" alt="">
+                </div>
+                <div class="algoritmo">
+                    <h3>8. $nin: Valores que no están dentro de un rango (propio) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra los platos que no tienen las el siguiente nivel de calorias 100,200,300
+
+                    </p>
+                    <img src="./Recursos/Platos_BD/8.png" alt="">
+                </div>
+
+                <div class="algoritmo">
+                    <h3>9. db.collection.find() (Propio) </h3>
+                    <p> <span>Descripcion: </span> 
+                        Muestra todas los platos de la base de datos
+                    </p>
+                    <img src="./Recursos/Platos_BD/9.png" alt="">
+                </div>
+                <div class="algoritmo">
+                    <h3>10. Eliminar un plato con <span>deleteOne</span> </h3>
+                    <p> <span>Descripcion: </span> 
+                      Elimina el plato con el nombre de Bandeja Paisa
+                    </p>
+                    <img src="./Recursos/Platos_BD/10.png" alt="">
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
+
+</html>
